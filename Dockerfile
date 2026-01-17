@@ -1,0 +1,20 @@
+# 1️⃣ Use official Node image
+FROM node:18-alpine
+
+# 2️⃣ Set working directory inside container
+WORKDIR /app
+
+# 3️⃣ Copy package files
+COPY package*.json ./
+
+# 4️⃣ Install dependencies
+RUN npm install
+
+# 5️⃣ Copy source code
+COPY src ./src
+
+# 6️⃣ Expose port
+EXPOSE 3000
+
+# 7️⃣ Start server
+CMD ["node", "src/index.js"]

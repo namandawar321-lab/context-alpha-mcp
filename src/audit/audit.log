@@ -1,0 +1,2 @@
+{"timestamp":"2026-01-17T18:53:13.514Z","type":"LLM_RESPONSE","attempt":1,"prompt":"When a user signs up, log the event","rawBlueprint":{"name":"Log user signup","trigger":"http_webhook","steps":[{"action":"log_event","params":{}}]}}
+{"timestamp":"2026-01-17T18:53:13.526Z","type":"PLAN_ACCEPTED","attempts":1,"blueprint":{"name":"Log user signup","trigger":"http_webhook","steps":[{"action":"log_event","params":{}}]}}
